@@ -145,6 +145,21 @@ function get_rom_type() {
                 treble_generate="slim"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
+	    omnirom)
+                mainrepo="git://github.com/omnirom/android.git"
+                mainbranch="android-8.1"
+                localManifestBranch="android-8.1"
+                treble_generate="omnirom"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                ;;
+
+	    DU)
+                mainrepo="git://github.com/DirtyUnicorns/android_manifest.git"
+                mainbranch="o8x"
+                localManifestBranch="android-8.1"
+                treble_generate="DU"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                ;;
 
 
 
