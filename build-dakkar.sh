@@ -237,7 +237,7 @@ function init_release() {
 }
 
 function init_main_repo() {
-    repo init -u "$mainrepo" -b "$mainbranch"
+    repo init -u "$mainrepo" -b "$mainbranch" --repo-url=https://mirrors.tuna.tsinghua.edu.cn/git/git-repo
 }
 
 function clone_or_checkout() {
