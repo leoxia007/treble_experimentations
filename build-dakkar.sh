@@ -39,6 +39,9 @@ ROM types:
   aokp
   slim
   aex
+  omnirom
+  du
+
 
 Variants are dash-joined combinations of (in order):
 * processor type
@@ -153,11 +156,11 @@ function get_rom_type() {
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
 
-	    DU)
+	    du)
                 mainrepo="git://github.com/DirtyUnicorns/android_manifest.git"
                 mainbranch="o8x"
                 localManifestBranch="android-8.1"
-                treble_generate="DU"
+                treble_generate="du"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
 
